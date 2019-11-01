@@ -6,7 +6,7 @@ import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class Conexao {
+public class Conexao2 {
     public static Connection getConexao(){
         String driver = "org.postgresql.Driver";
         String URL = "jdbc:postgresql://localhost:5432/aps_bd2";
@@ -21,7 +21,7 @@ public class Conexao {
             System.err.print(e.getMessage());
             return null;
         } catch (ClassNotFoundException ex) {
-            Logger.getLogger(Conexao.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Conexao2.class.getName()).log(Level.SEVERE, null, ex);
             return null;
         }
     }
